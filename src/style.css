@@ -1,9 +1,10 @@
 @import 'meyer-reset.css';
 
 div#content {
+  height: 100vh;
+  width: 100vw;
+  
   background-image: url('images/bg-pomegranite.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
 }
