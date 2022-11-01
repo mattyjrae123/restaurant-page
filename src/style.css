@@ -1,1 +1,9 @@
 @import 'meyer-reset.css';
+
+div#content {
+  background-image: url('images/bg-pomegranite.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
