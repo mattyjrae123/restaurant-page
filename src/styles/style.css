@@ -31,7 +31,7 @@ div#content {
 */
 
 header {
-  height: 100px;
+  height: 10%;
   padding: 10px 150px;
 
   display: flex;
@@ -64,3 +64,12 @@ header .nav-link:hover {
 /*
   MAIN
 */
+
+main {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 90%;
+  width: 60%;
+  margin: 0 auto;
+}
