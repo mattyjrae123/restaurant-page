@@ -44,4 +44,7 @@ header .nav-link {
   font-size: 1.75rem;
   color: white;
   margin-left: 100px;
+
+  background: none;
+  border: none;
 }
