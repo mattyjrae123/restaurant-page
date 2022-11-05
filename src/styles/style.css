@@ -48,3 +48,11 @@ header .nav-link {
   background: none;
   border: none;
 }
+
+header .nav-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+
+  transform: scale(1.05);
+  transition: transform 0.05s;
+}
