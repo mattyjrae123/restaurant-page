@@ -1,5 +1,12 @@
 @import 'meyer-reset.css';
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 div#content {
   height: 100vh;
   width: 100vw;
