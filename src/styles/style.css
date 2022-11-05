@@ -15,3 +15,12 @@ div#content {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+header {
+  border: 1px solid white;
+  height: 100px;
+}
+
+header > #logo {
+  max-height: 100px;
+}
