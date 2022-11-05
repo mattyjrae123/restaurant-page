@@ -26,6 +26,10 @@ div#content {
   background-size: cover;
 }
 
+/*
+  HEADER
+*/
+
 header {
   height: 100px;
   padding: 10px 150px;
@@ -56,3 +60,7 @@ header .nav-link:hover {
   transform: scale(1.05);
   transition: transform 0.05s;
 }
+
+/*
+  MAIN
+*/
