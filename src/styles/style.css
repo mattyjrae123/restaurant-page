@@ -29,6 +29,7 @@ div#content {
 header {
   border: 1px solid white;
   height: 100px;
+  padding: 0 150px;
 
   display: flex;
   justify-content: space-between;
@@ -42,4 +43,5 @@ header > #logo {
 header .nav-link {
   font-size: 2.25rem;
   color: white;
+  margin-left: 100px;
 }
