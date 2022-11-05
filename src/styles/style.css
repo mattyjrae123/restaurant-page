@@ -24,3 +24,8 @@ header {
 header > #logo {
   max-height: 100px;
 }
+
+header .nav-link {
+  font-size: 36px;
+  color: white;
+}
