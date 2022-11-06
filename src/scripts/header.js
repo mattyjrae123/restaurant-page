@@ -17,14 +17,17 @@ export default (() => {
   // NAVIGATION BUTTONS
   const navBtn1 = document.createElement('button');
   navBtn1.classList.add('nav-link');
+  navBtn1.setAttribute('data-page', 'home');
   navBtn1.textContent = 'Home';
 
   const navBtn2 = document.createElement('button');
   navBtn2.classList.add('nav-link');
+  navBtn2.setAttribute('data-page', 'menu');
   navBtn2.textContent = 'Menu';
 
   const navBtn3 = document.createElement('button');
   navBtn3.classList.add('nav-link');
+  navBtn3.setAttribute('data-page', 'contact');
   navBtn3.textContent = 'Contact';
 
   // NAV ELEMENT
