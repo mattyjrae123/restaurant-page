@@ -7,21 +7,24 @@ import '../styles/style.css';
 const main = document.createElement('main');
 main.appendChild(home);
 
-document.querySelector('div#content').appendChild(header);
-document.querySelector('div#content').appendChild(main);
+document.querySelector('div#content').append(header, main);
 
-document.querySelector('button[data-page="home"]')
-        .addEventListener('click', () => navBtnListener(home));
+const homeBtn = document.querySelector('button[data-page="home"]');
+const menuBtn = document.querySelector('button[data-page="menu"]');
+const contactBtn = document.querySelector('button[data-page="contact"]');
 
-document.querySelector('button[data-page="menu"]')
-        .addEventListener('click', () => navBtnListener(menu));
+homeBtn.addEventListener('click', (e) => navBtnListener(home, e));
+menuBtn.addEventListener('click', (e) => navBtnListener(menu, e));
+contactBtn.addEventListener('click', (e) => navBtnListener(contact, e));
 
-document.querySelector('button[data-page="contact"]')
-        .addEventListener('click', () => navBtnListener(contact));
-
-const navBtnListener = (domElement) => {
+const navBtnListener = (domElement, e) => {
   if (main.firstChild !== domElement) {
     main.removeChild(main.firstChild);
     main.appendChild(domElement);
+
+    homeBtn.classList.remove('active-menu');
+    menuBtn.classList.remove('active-menu');
+    contactBtn.classList.remove('active-menu');
+    e.target.classList.add('active-menu');
   }
 };
