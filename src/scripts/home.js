@@ -8,6 +8,9 @@ export default (() => {
   const h1 = document.createElement('h1');
   h1.textContent = 'Burger Shop';
 
+  const h2 = document.createElement('h2');
+  h2.textContent = 'Our Story';
+
   const p1 = document.createElement('p');
   p1.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
                  + 'Mauris porttitor tellus non arcu euismod faucibus.'
@@ -35,6 +38,7 @@ export default (() => {
 
   homeDiv.appendChild(h1);
   homeDiv.appendChild(p1);
+  homeDiv.appendChild(h2);
   homeDiv.appendChild(p2);
   homeDiv.appendChild(p3);
   return homeDiv
