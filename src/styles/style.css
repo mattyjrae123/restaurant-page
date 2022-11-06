@@ -82,3 +82,15 @@ main {
   margin: 0 auto;
   color: var(--font-color);
 }
+
+main > div > h1 {
+  font-size: 3.5rem;
+}
+
+main > div > h2 {
+  font-size: 2.2rem;
+}
+
+main > div > p {
+  font-size: 1.25rem;
+}
