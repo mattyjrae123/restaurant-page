@@ -44,7 +44,7 @@ header > #logo {
   width: auto;
 }
 
-header .nav-link {
+.nav-link {
   font-size: 1.75rem;
   color: white;
   margin-left: 100px;
@@ -53,12 +53,20 @@ header .nav-link {
   border: none;
 }
 
-header .nav-link:hover {
+.nav-link:not(.active-menu):hover {
   cursor: pointer;
   text-decoration: underline;
 
   transform: scale(1.05);
   transition: transform 0.05s;
+}
+
+.active-menu {
+  color: grey;
+}
+
+.active-menu:hover {
+  cursor: default;
 }
 
 /*
