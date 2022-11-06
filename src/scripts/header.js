@@ -1,10 +1,9 @@
 import logo from '../images/logo-md.png';
 
 /**
- * Generates all html content for page header, and appends it to the
- * div#content element
+ * Generates all html content for page header, and returns it as an object
  */
-export default function generateHeader() {
+export default (() => {
   const header = document.createElement('header');
 
   const img = document.createElement('img');
@@ -15,5 +14,6 @@ export default function generateHeader() {
   img.setAttribute('width', '193');
 
   header.appendChild(img);
-  document.querySelector('div#content').appendChild(header);
-}
+  
+  return header;
+})();
