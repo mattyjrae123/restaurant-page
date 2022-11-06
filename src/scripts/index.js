@@ -5,7 +5,7 @@ import contact from './contact';
 import '../styles/style.css';
 
 const main = document.createElement('main');
-main.appendChild(contact);
+main.appendChild(home);
 
 document.querySelector('div#content').appendChild(header);
 document.querySelector('div#content').appendChild(main);
