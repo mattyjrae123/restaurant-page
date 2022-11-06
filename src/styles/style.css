@@ -86,7 +86,8 @@ main {
 main > div {
   height: 100%;
   width: 100%;
-  
+  padding: 30px 70px;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -95,12 +96,17 @@ main > div {
 
 main > div > h1 {
   font-size: 3.5rem;
+  margin: 20px 0;
+  text-decoration: underline;
 }
 
 main > div > h2 {
   font-size: 2.2rem;
+  margin-top: 30px;
+  text-decoration: underline;
 }
 
 main > div > p {
   font-size: 1.25rem;
+  margin-top: 30px;
 }
