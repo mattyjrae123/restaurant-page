@@ -8,7 +8,34 @@ export default (() => {
   const h1 = document.createElement('h1');
   h1.textContent = 'Burger Shop';
 
-  homeDiv.appendChild(h1);
+  const p1 = document.createElement('p');
+  p1.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                 + 'Mauris porttitor tellus non arcu euismod faucibus.'
+                 + ' Aliquam hendrerit odio id euismod volutpat. Donec'
+                 + ' scelerisque ac mauris vel eleifend. Curabitur ut massa'
+                 + ' tempus dolor scelerisque blandit nec a leo. Fusce varius'
+                 + 'accumsan pharetra. Curabitur ultrices eu lectus vel' +
+                 + ' fringilla.';
 
+  const p2 = document.createElement('p');
+  p2.textContent = 'Fusce cursus magna arcu, sed pulvinar nisi bibendum id.'
+                 + 'Nulla rhoncus, purus at pretium blandit, erat urna '
+                 + ' tincidunt tellus, eu pulvinar arcu odio in magna.'
+                 + 'Curabitur vulputate mattis ligula, vel venenatis urna.'
+                 + 'Duis gravida porta nisl, consequat convallis ligula'
+                 + ' ultricies ut.';
+
+  const p3 = document.createElement('p');
+  p3.textContent = 'Mauris efficitur pellentesque lorem at scelerisque. Ut '
+                 + 'pulvinar dapibus sapien, sit amet aliquet turpis feugiat '
+                 + 'non. Vestibulum non lacus varius, convallis nisi et, '
+                 + 'euismod augue. Phasellus sodales elit eu enim dictum, '
+                 + 'vitae iaculis leo scelerisque. Nullam vitae elementum '
+                 + 'eros.';
+
+  homeDiv.appendChild(h1);
+  homeDiv.appendChild(p1);
+  homeDiv.appendChild(p2);
+  homeDiv.appendChild(p3);
   return homeDiv
 })();
