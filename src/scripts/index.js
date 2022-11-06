@@ -10,15 +10,26 @@ document.querySelector('div#content').appendChild(main);
 
 document.querySelector('button[data-page="home"]')
         .addEventListener('click', () => {
-          console.log('SSS');
+          if (main.firstChild === home) {
+            return;
+          }
+
+          clearMain();
+          main.appendChild(home);
   });
 
 document.querySelector('button[data-page="menu"]')
         .addEventListener('click', () => {
-          console.log('S2');
+          clearMain();
   });
 
 document.querySelector('button[data-page="contact"]')
         .addEventListener('click', () => {
-          console.log('SS3');
+          clearMain();
   });
+
+const clearMain = () => {
+  while (main.firstChild) {
+    main.removeChild(main.firstChild);
+  }
+}
