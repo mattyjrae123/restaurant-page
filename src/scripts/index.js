@@ -5,7 +5,6 @@ import contact from './contact';
 import '../styles/style.css';
 
 const main = document.createElement('main');
-main.appendChild(home);
 
 document.querySelector('div#content').append(header, main);
 
@@ -19,7 +18,9 @@ contactBtn.addEventListener('click', (e) => navBtnListener(contact, e));
 
 const navBtnListener = (domElement, e) => {
   if (main.firstChild !== domElement) {
-    main.removeChild(main.firstChild);
+    if (main.firstChild) {
+      main.removeChild(main.firstChild);
+    }
     main.appendChild(domElement);
 
     homeBtn.classList.remove('active-menu');
@@ -28,3 +29,5 @@ const navBtnListener = (domElement, e) => {
     e.target.classList.add('active-menu');
   }
 };
+
+homeBtn.click();

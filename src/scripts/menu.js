@@ -7,8 +7,7 @@ const generateMenuItems = (name, price) => {
   const priceSpan = document.createElement('span');
   priceSpan.textContent = `$${price}`;
 
-  li.appendChild(nameSpan);
-  li.appendChild(priceSpan);
+  li.append(nameSpan, priceSpan);
 
   return li;
 };
@@ -32,25 +31,20 @@ const generateMenuItems = (name, price) => {
 
   // 'Starters' list
   const startersUl = document.createElement('ul');
-  startersUl.appendChild(generateMenuItems('Grass toast', 0.99));
-  startersUl.appendChild(generateMenuItems('Cheese toast', 3.99));
-  startersUl.appendChild(generateMenuItems('Marmite toast', 2.99));
-  startersUl.appendChild(generateMenuItems('Jalapenos and salami', 9.99));
+  startersUl.append(generateMenuItems('Grass toast', 0.99),
+                    generateMenuItems('Cheese toast', 3.99),
+                    generateMenuItems('Marmite toast', 2.99),
+                    generateMenuItems('Jalapenos and salami', 9.99));
 
   // 'Mains' list
   const mainsUl = document.createElement('ul');
-  mainsUl.appendChild(generateMenuItems('Lamb rack', 19.99));
-  mainsUl.appendChild(generateMenuItems('Cumin spicy beetroot', 17.85));
-  mainsUl.appendChild(generateMenuItems('Tuna quiche', 99.05));
-  mainsUl.appendChild(generateMenuItems('Pomegranite sandwich', 44.99));
-  mainsUl.appendChild(generateMenuItems('Exquisite roast yams', 39.99));
-  mainsUl.appendChild(generateMenuItems('Blanched turkey', 19.07));
+  mainsUl.append(generateMenuItems('Lamb rack', 19.99),
+                 generateMenuItems('Cumin spicy beetroot', 17.85),
+                 generateMenuItems('Tuna quiche', 99.05),
+                 generateMenuItems('Exquisite roast yams', 39.99),
+                 generateMenuItems('Blanched turkey', 19.07));
 
-  menuDiv.appendChild(h1);
-  menuDiv.appendChild(startersHeading);
-  menuDiv.appendChild(startersUl);
-  menuDiv.appendChild(mainsHeading);
-  menuDiv.appendChild(mainsUl);
+  menuDiv.append(h1, startersHeading, startersUl, mainsHeading, mainsUl);
 
   return menuDiv;
 })();

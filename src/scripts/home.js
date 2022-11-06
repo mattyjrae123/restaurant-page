@@ -36,10 +36,7 @@ export default (() => {
                  + 'vitae iaculis leo scelerisque. Nullam vitae elementum '
                  + 'eros.';
 
-  homeDiv.appendChild(h1);
-  homeDiv.appendChild(p1);
-  homeDiv.appendChild(h2);
-  homeDiv.appendChild(p2);
-  homeDiv.appendChild(p3);
+  homeDiv.append(h1, p1, h2, p2, p3);
+  
   return homeDiv
 })();

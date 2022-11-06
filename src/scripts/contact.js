@@ -7,8 +7,7 @@ const generateContactDetails = (description, details) => {
   const detailSpan = document.createElement('span');
   detailSpan.textContent = `${details}`;
 
-  li.appendChild(descSpan);
-  li.appendChild(detailSpan);
+  li.append(descSpan, detailSpan);
 
   return li;
 };
@@ -27,12 +26,11 @@ const generateContactDetails = (description, details) => {
   // Contact list
   const ul = document.createElement('ul');
 
-  ul.appendChild(generateContactDetails('Address', '324 Big Fisher Ave'));
-  ul.appendChild(generateContactDetails('Phone number', '01 234 5678'));
-  ul.appendChild(generateContactDetails('E-mail', 'example.one@two.com'));
+  ul.append(generateContactDetails('Address', '324 Big Fisher Ave'),
+            generateContactDetails('Phone number', '01 234 5678'),
+            generateContactDetails('E-mail', 'example.one@two.com'));
 
-  contactDiv.appendChild(h1);
-  contactDiv.appendChild(ul);
-  
+  contactDiv.append(h1, ul);
+
   return contactDiv;
 })();
